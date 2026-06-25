@@ -863,7 +863,7 @@
           </a>
         </div>
       </div>
-      <form onsubmit="handleSubmit(event)">
+      <form action="https://formspree.io/f/mgojapye" method="POST">
         <div class="form-row">
           <input type="text" placeholder="Dein Name" required>
           <input type="email" placeholder="E-Mail-Adresse" required>
@@ -888,14 +888,6 @@
   </footer>
 
   <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('.form-submit');
-      btn.textContent = 'Gesendet! Ich melde mich bald.';
-      btn.style.background = '#059669';
-      btn.disabled = true;
-    }
-
     // Subtle scroll fade-in
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(el => {
